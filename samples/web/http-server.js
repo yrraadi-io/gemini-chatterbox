@@ -19,9 +19,13 @@ import fs from "fs";
 import http from "http";
 import path from "path";
 import url from "url";
+import dotenv from "dotenv";
+
+// Load environment variables from .env file
+dotenv.config();
 
 // Local port for http server to listen on
-const PORT = 9000;
+const PORT = 12345;
 
 // Get your API key from https://makersuite.google.com/app/apikey
 // Access your API key as an environment variable
